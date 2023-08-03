@@ -1,19 +1,10 @@
 /*
- * File: ivEngineClient.h
- * Project: csgo-simple-linux-cheat
- * Created Date: 19.02.2023 19:46:56
- * Author: 3urobeat
- * 
- * Last Modified: 19.02.2023 20:09:58
- * Modified By: 3urobeat
- * 
- * Copyright (c) 2023 3urobeat <https://github.com/HerrEurobeat>
+ * Copyright (c) 2023 st1koo <https://github.com/st1koo>
  * 
  * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
  */
-
 
 #pragma once
 
@@ -21,7 +12,7 @@
 #include "../interfaces.h"
 
 
-// https://github.com/ValveSoftware/source-sdk-2013/blob/0d8dceea4310fde5706b3ce1c70609d72a38efdf/sp/src/public/cdll_int.h#L194
+
 class IVEngineClient {
     public:
         typedef struct player_info_s {

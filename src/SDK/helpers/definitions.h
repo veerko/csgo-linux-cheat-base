@@ -1,13 +1,5 @@
 /*
- * File: definitions.h
- * Project: csgo-simple-linux-cheat
- * Created Date: 04.04.2022 20:25:38
- * Author: 3urobeat
- * 
- * Last Modified: 16.02.2023 19:20:52
- * Modified By: 3urobeat
- * 
- * Copyright (c) 2022 3urobeat <https://github.com/HerrEurobeat>
+ * Copyright (c) 2023 st1koo <https://github.com/st1koo>
  * 
  * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
@@ -17,8 +9,6 @@
 
 #pragma once
 
-
-// I wasn't able to find this (I guess it would be in the SDK?) but the other cheats are using exactly this list sooo
 enum EClassIds {
     CAI_BaseNPC = 0,
     CAK47,
