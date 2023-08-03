@@ -1,13 +1,5 @@
 /*
- * File: menu.cpp
- * Project: csgo-simple-linux-cheat
- * Created Date: 01.04.2022 15:50:14
- * Author: 3urobeat
- * 
- * Last Modified: 14.02.2023 18:31:28
- * Modified By: 3urobeat
- * 
- * Copyright (c) 2022 3urobeat <https://github.com/HerrEurobeat>
+ * Copyright (c) 2023 st1koo <https://github.com/st1koo>
  * 
  * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
@@ -18,18 +10,16 @@
 #include "menu.h"
 
 
-// onPollEvent function from https://github.com/seksea/gamesneeze/blob/7ec40e08a9964549672da6c735567ff613262097/src/core/menu/menu.cpp
+
 void Menu::onPollEvent(SDL_Event* event, const int result) {
     if (result && ImGui_ImplSDL2_ProcessEvent(event) && Menu::active) {
         event->type = 0;
     }
 }
 
-// onSwapWindow function (modified) from https://github.com/seksea/gamesneeze/blob/7ec40e08a9964549672da6c735567ff613262097/src/core/menu/menu.cpp
-void Menu::onSwapWindow(SDL_Window* window) {
-    // TODO: Write my own function
 
-    // Run on first call
+void Menu::onSwapWindow(SDL_Window* window) {
+
     if (!isInit) {
         gl3wInit();
         IMGUI_CHECKVERSION();
@@ -50,7 +40,7 @@ void Menu::onSwapWindow(SDL_Window* window) {
     SDL_GetWindowSize(window, &w, &h);
     screenSizeX = w;
     screenSizeY = h;
-    test
+
     io.DisplaySize = ImVec2((float)w, (float)h);
 
     ImGui::NewFrame();
@@ -63,7 +53,7 @@ void Menu::onSwapWindow(SDL_Window* window) {
         io.MouseDrawCursor = false;
     }
 
-    // Activate menu if openKey was pressed
+
     if (ImGui::IsKeyPressed(Menu::openKey, false)) {
         Menu::active = !Menu::active;
     }
@@ -73,16 +63,14 @@ void Menu::onSwapWindow(SDL_Window* window) {
 }
 
 
-/**
- * Draws the menu window
- */
+
 void Menu::showMenu() {
 
-    // Show title bar of window
+
     ImGui::Begin(("csgo-simple-linux-cheat v" + version + " by 3urobeat").c_str(), &Menu::active);
 
 
-    // Show buttons for page selection that will change the currentPage value
+
     if (ImGui::Button("Aimbot", buttonWidth)) Menu::currentPage = 0;
     
     ImGui::SameLine();
@@ -95,7 +83,7 @@ void Menu::showMenu() {
     if (ImGui::Button("Info", buttonWidth)) Menu::currentPage = 3;
 
 
-    // Show desired page
+
     switch (currentPage) {
         case 1:
             Menu::showVisualsPage();
