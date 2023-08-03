@@ -50,12 +50,12 @@ void Menu::onSwapWindow(SDL_Window* window) {
     SDL_GetWindowSize(window, &w, &h);
     screenSizeX = w;
     screenSizeY = h;
-    
+    test
     io.DisplaySize = ImVec2((float)w, (float)h);
 
     ImGui::NewFrame();
 
-    // Show menu and cursor if menu was activated, otherwise hide cursor
+    
     if (Menu::active) {
         io.MouseDrawCursor = true;
         Menu::showMenu();
