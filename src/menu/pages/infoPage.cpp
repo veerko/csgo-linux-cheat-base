@@ -15,7 +15,7 @@
 void Menu::showInfoPage() {
     ImGui::Text( "csgo-linux-cheat-base");
     ImGui::Text(("Version: " + version).c_str());
-    ImGui::Text( "Author:  3urobeat");
+    ImGui::Text( "Author:  st1koo");
     ImGui::Text(("Source:  https://github.com/st1koo/csgo-linux-cheat-base"));
     ImGui::Text("");
 
