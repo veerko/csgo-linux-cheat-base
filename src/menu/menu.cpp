@@ -67,7 +67,7 @@ void Menu::onSwapWindow(SDL_Window* window) {
 void Menu::showMenu() {
 
 
-    ImGui::Begin(("csgo-simple-linux-cheat v" + version + " by 3urobeat").c_str(), &Menu::active);
+    ImGui::Begin(("csgo-linux-cheat-base v" + version + " by st1koo").c_str(), &Menu::active);
 
 
 

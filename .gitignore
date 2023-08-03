@@ -1,5 +1,5 @@
 .vscode
-csgo-simple-linux-cheat.code-workspace
+csgo-linux-cheat-base.code-workspace
 build/*
 !build/.gitkeep
 gdb.txt

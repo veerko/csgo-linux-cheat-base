@@ -1,6 +1,6 @@
 # csgo-linux-cheat-base
   
-This is a simple CS:GO cheat/ base for Linux  
+This is a CS:GO cheat/ base for Linux  
 It is not meant to be used as is and is rather a WIP project for educational purposes  
   
 ## Building
