@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.11.0)
-project(csgo-simple-linux-cheat)
+project(csgo-linux-cheat-base)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -16,5 +16,5 @@ list(APPEND SOURCE_FILES "${CMAKE_SOURCE_DIR}/src/menu/ImGUI/GL/gl3w.c")
 
 include_directories("${CMAKE_SOURCE_DIR}/src/")
 
-add_library(csgo-simple-linux-cheat SHARED ${SOURCE_FILES})
-target_link_libraries(csgo-simple-linux-cheat dl pthread SDL2 GL)
+add_library(csgo-linux-cheat-base SHARED ${SOURCE_FILES})
+target_link_libraries(csgo-linux-cheat-base dl pthread SDL2 GL)
