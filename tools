@@ -81,7 +81,7 @@ function load {
             -ex "detach" \
             -ex "quit"
     )"
-
+//steam
     sleep 1
     sudo killall -18 steamwebhelper
     sudo killall -18 steam
