@@ -13,7 +13,7 @@ filename="libcsgo-linux-cheat-base.so"
 libname="libMangoHud.so" 
 threads=6 
 
-
+//ddd
 
 maxThreads=$(nproc --all)
 
