@@ -31,7 +31,7 @@ namespace Config {
 
     namespace Misc {
         inline bool bhopEnabled = false;
-
+        inline bool skins = false;
         inline bool radarEnabled = false;
     }
     
