@@ -29,6 +29,7 @@ struct CUserCmd {
     char impulse;
     int weaponselect;
     int weaponsubtype;
+    int weaponskin;
     int random_seed;
     short mousedx;
     short mousedy;

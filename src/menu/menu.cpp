@@ -30,7 +30,6 @@ void Menu::onSwapWindow(SDL_Window* window) {
 
         isInit = true;
     }
-
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplSDL2_NewFrame(window);
 
@@ -81,7 +80,7 @@ void Menu::showMenu() {
 
     ImGui::SameLine();
     if (ImGui::Button("Info", buttonWidth)) Menu::currentPage = 3;
-
+uhy
 
 
     switch (currentPage) {
@@ -94,6 +93,8 @@ void Menu::showMenu() {
         case 3:
             Menu::showInfoPage();
             break;
+        case 4: 
+            Menu::showSkinchanger();
         default:
             Menu::showAimbotPage();
             Menu::currentPage = 0;
